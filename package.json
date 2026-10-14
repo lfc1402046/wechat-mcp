@@ -1,0 +1,54 @@
+{
+  "name": "wechat-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that lets Claude Code / Cursor / Windsurf read WeChat Official Account articles. Zero config.",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "wechat-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "lint": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "wechat",
+    "mp-weixin",
+    "claude",
+    "cursor",
+    "windsurf",
+    "ai-agent",
+    "chinese"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfc1402046/wechat-mcp.git"
+  },
+  "author": "lfc1402046",
+  "bugs": {
+    "url": "https://github.com/lfc1402046/wechat-mcp/issues"
+  },
+  "homepage": "https://github.com/lfc1402046/wechat-mcp#readme"
+}

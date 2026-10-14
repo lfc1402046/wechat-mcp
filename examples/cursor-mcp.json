@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "wechat": {
+      "command": "npx",
+      "args": ["-y", "wechat-mcp"],
+      "env": {}
+    }
+  }
+}
